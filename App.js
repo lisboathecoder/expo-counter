@@ -6,7 +6,7 @@ export default function App() {
 
   const incrementar = () => {setContador(contador + 1);
   };
-
+  const reset = () => {setContador(0)}
   const decrementar = () => {setContador(contador - 1);
   };
 
@@ -15,6 +15,7 @@ export default function App() {
       <Text style={styles.numero}>{contador}</Text>
         <View style={styles.linhaDeBotoes}>
           <TouchableOpacity style={styles.botaoMais} onPress={incrementar}> + </TouchableOpacity>
+          <TouchableOpacity style={styles.botaoReset} onPress={reset}> Resetar</TouchableOpacity>
           <TouchableOpacity style={styles.botaoMenos} onPress={decrementar}> - </TouchableOpacity>
         </View>
     </View>
@@ -24,7 +25,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#000000',
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -35,18 +36,31 @@ const styles = StyleSheet.create({
   numero: {
     fontSize: 80, 
     fontWeight: 'bold',
-    color: '#000000',
+    color: '#ffffff',
   },
+
   linhaDeBotoes: {
     flexDirection: 'row',
     marginTop: 20,
+    padding: 10,
+    margin: 10
   },
   botaoMais: {
-    padding: 20,
+    borderRadius: 20,
+    margin: 10,
+    padding: 15,
     backgroundColor: '#4CAF50',
   },
+  botaoReset: {
+    borderRadius: 20,
+    margin: 10,
+    padding: 15,
+    backgroundColor: '#616161',
+  },
   botaoMenos: {
-    padding: 20,
+    borderRadius: 20,
+    margin: 10,
+    padding: 15,
     backgroundColor: '#F44336',
   },
 
