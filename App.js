@@ -48,19 +48,19 @@ const styles = StyleSheet.create({
   botaoMais: {
     borderRadius: 20,
     margin: 10,
-    padding: 15,
+    padding: 25,
     backgroundColor: '#4CAF50',
   },
   botaoReset: {
     borderRadius: 20,
     margin: 10,
-    padding: 15,
+    padding: 25,
     backgroundColor: '#616161',
   },
   botaoMenos: {
     borderRadius: 20,
     margin: 10,
-    padding: 15,
+    padding: 25,
     backgroundColor: '#F44336',
   },
 
